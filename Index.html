@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container-1">
+        <button id="start-btn">Start Quiz</button>
+      </div>
+      <div class="container-2">
+        <div>
+          <h2>Some Rules of this Quiz</h2>
+          <hr />
+        </div>
+        <div>
+          <ol>
+            <li>You will have only <b>15 seconds </b> per each question.</li>
+            <li>Once you select your answer, it can't be undone.</li>
+            <li>You can't select any option once time goes off.</li>
+            <li>You can't exit from the Quiz while you're playing.</li>
+            <li>You'll get points on the basis of your correct answers.</li>
+          </ol>
+          <hr />
+        </div>
+        <div>
+          <button id="exit-btn">Exit Quiz</button>
+          <button id="continue-btn">Continue</button>
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="header">
+          <h3>Awesome Quiz Application</h3>
+          <div class="timer">
+            <span>Time Left &nbsp;</span>
+            <span id="timerValue"></span>
+          </div>
+        </div>
+        <progress id="progress" value="0" max="15" width="1px">0</progress>
+        <div id="question"></div>
+        <footer>
+          <p id="question-count"></p>
+          <button id="next-btn">Next</button>
+        </footer>
+      </div>
+      <div class="container-4">
+        <h2>You've completed the Quiz!</h2>
+        <h2 id="result">and congrats! 🎉, You got 4 out of 6</h2>
+        <div>
+          <button id="replay-btn">Replay Quiz</button>
+          <button id="quit-btn">Quit Quiz</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
